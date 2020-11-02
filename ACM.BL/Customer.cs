@@ -42,6 +42,32 @@ namespace ACM.BL
                 _Lastname = value;
             }
         }
+ 
+        
+        //Retrivng Customer Data 
+        public Customer Retrieve (int CustomerId)
+        {
+            return new Customer();
+        } 
+        
+
+        // Retriving All Customer ..
+
+        public List<Customer> Retrieve()
+        {
+            return new List<Customer>();
+        }
+
+
+
+
+        //Saving Customer Data
+        public bool Save()
+        {
+            return true;
+        }
+
+
         // Validation Of Customer Data ....
         public bool Validate()
         {
@@ -55,7 +81,5 @@ namespace ACM.BL
        
     }
 
-   
-  
-        
+    
 }

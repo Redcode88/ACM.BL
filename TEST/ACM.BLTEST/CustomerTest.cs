@@ -55,5 +55,21 @@ namespace ACM.BLTEST
 
             Assert.AreEqual(3, Customer.InstanseCount);
         }
+
+        [TestMethod]
+        public void ValidValidate()
+        {
+
+            var Customer = new Customer()
+            {
+                Lastname="mohsen",
+                EmailAddres="medomohsen293@gmail.com"
+            };
+
+            var Expected = true;
+            var Actual = Customer.Validate();
+            // Assert
+            Assert.AreEqual(Expected, Actual);
+        }
     }
 }
