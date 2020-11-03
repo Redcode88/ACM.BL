@@ -12,10 +12,10 @@ namespace ACM.BLTEST
 
         {
             //-- Arrang with object initializer Way
-            Customer customer = new Customer
+            Customer customer = new Customer()
             {
-                FirstName="medo",
-                Lastname="mohsen"
+                Lastname="mohsen",
+                FirstName="medo"
             };
             //Actuale
             string Expected = "medo, mohsen";
@@ -58,11 +58,13 @@ namespace ACM.BLTEST
 
         [TestMethod]
         public void ValidValidate()
+
         {
 
             var Customer = new Customer()
             {
-                Lastname="mohsen",
+                FirstName="medo",
+                Lastname ="mohsen",
                 EmailAddres="medomohsen293@gmail.com"
             };
 
